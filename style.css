@@ -5,6 +5,7 @@
     background-color: black;
     font-family: Arial;
     border: border-box;
+    user-select: none;
 }
 
 .navbar {
