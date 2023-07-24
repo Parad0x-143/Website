@@ -1,0 +1,80 @@
+/** NAVBAR STYLING **/
+
+* {
+    margin: 0;
+    background-color: black;
+    font-family: Arial;
+    border: border-box;
+}
+
+.navbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.logo {
+    background-image: url("movies-hub-logo.png");
+    background-size: cover;
+    height: 30px;
+    width: 30px;    
+}
+
+.home-icon {
+    color: white;
+    margin-left: 75%;
+}
+
+:hover.icon {
+    color: red;
+    transition: 0.5s;
+}
+
+/** **/
+
+/** MOVIES SECTION **/
+
+.movies-section {
+    display: flex;
+    margin-top: 15px;
+    user-select: none;
+}
+
+.movies-section-buttons {
+    margin-left: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: solid;
+    border-color: white;
+    border-width: 1.9px;
+    border-radius: 12px;
+    height: 25px;
+    width: 5rem;
+}
+
+/** **/
+
+/** HOVER EFFECTS **/
+
+:hover.movies-section-buttons {
+    color: black;
+    background-color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+:active.movies-section-buttons {
+    color: black;
+    background-color: white;
+    border: none;
+}
+
+/** **/
