@@ -5,7 +5,7 @@
     background-color: black;
     font-family: Arial;
     border: border-box;
-    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .navbar {
@@ -43,13 +43,15 @@
 /** MOVIES SECTION **/
 
 .movies-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: 150px 150px;
     margin-top: 15px;
     user-select: none;
+    justify-items: center;
+    margin-left: 40px;
 }
 
 .movies-section-buttons {
-    margin-left: 40px;
     font-size: 1rem;
     font-weight: bold;
     color: white;
@@ -58,7 +60,9 @@
     border-width: 1.9px;
     border-radius: 12px;
     height: 25px;
-    width: 5rem;
+    width: 7rem;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /** **/
@@ -79,3 +83,29 @@
 }
 
 /** **/
+
+/** MOVIES **/
+
+.movies {
+    display: grid;
+    margin-top: 25px;
+    margin-left: 15px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 55px;
+}
+
+.movie {
+    width: 160px;
+}
+
+.title {
+    margin-top: -4px;
+    height: 30px;
+    width: 153px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    font: bold;
+    font-size: large;
+    padding-left: 8px;
+    padding-top: 8px;
+}
