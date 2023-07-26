@@ -19,7 +19,7 @@
             <div class="home-icon">
                 <div class="icon">
                     <a href="">
-                      <i class="fa-solid fa-house fa-xl" style="color: #f5f5f5;"></i>                
+                      <i class="fa-solid fa-house fa-xl fa-bounce" style="color: #f5f5f5;"></i>                
                     </a>
                 </div>
             </div>
@@ -71,8 +71,19 @@
         <i class="fa-solid fa-hashtag fa-xl hashtag fa-flip" style="color: #ffffff;"></i>
         <div class="movie-title">
             <p class="detail-name"> Quality <span class="colon"> : </span> </p>
-            <p class="name-air"> 1080p | 720p | 480p </p>
+            <p class="name-air"> 1080p | 720p </p>
         </div>
+        </div>
+    
+        <div class="title-air">
+        <i class="fa-solid fa-hashtag fa-xl hashtag fa-flip" style="color: #ffffff;"></i>
+        <div class="movie-title">
+            <p class="detail-name"> Trailer <span class="colon"> : </span> </p>
+        </div>
+        </div>
+
+        <div class="trailer">
+            <iframe width="360" height="203" src="https://www.youtube.com/embed/Euy4Yu6B3nU" title="AIR | Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -81,19 +92,38 @@
             : DOWNLOAD LINKS :
         </p>
     </div>
-        <div class="hd">
-            <button class="download-button">
-                1080p
-            </button>
+    <div class="hd1080p">
+        <i class="fa-solid fa-download fa-xl download-icon" style="color: #ffffff;"></i>
+            <a href="http://tiny.cc/zcb9vz">
+                <button class="download-button">
+                    1080p
+                </button>
+            </a>
         </div>
         <div class="hd720p">
-        <button class="download-button">
-            720p
-        </button>
+            <i class="fa-solid fa-download fa-xl download-icon" style="color: #ffffff;"></i>
+            <a href="http://tiny.cc/qdb9vz">
+                <button class="download-button">
+                    720p
+                </button>
+            </a>
         </div>
+
+        <div class="movie-details">
+            <div class="title-air">
+            <i class="fa-solid fa-hashtag fa-xl hashtag fa-flip" style="color: #ffffff;"></i>
+            <div class="movie-title">
+                <p class="detail-name"> Description <span class="colon"> : </span> </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="description-container">
+        <p class="description"> Discover the game-changing partnership between a then undiscovered Michael Jordan and Nike’s fledgling basketball division which revolutionized the world of sports and culture with the Air Jordan brand. </p>
+    </div>
+
     </body>
 <style>
-
 
 .air-poster {
     display: flex;
@@ -155,8 +185,8 @@
     width: 10rem;
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 30px;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 :hover.download-button {
@@ -166,7 +196,7 @@
     transition: 0.5s;
 }
 
-.hd {
+.hd1080p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,7 +206,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
+    padding-bottom: 20px;
+}
+
+.trailer {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.trailer-headline {
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    margin-left: 50px;
+}
+
+.download-icon {
+    display: flex;
+    margin-top: 30px;
+    margin-left: -20px;
+    margin-right: 10px;
+}
+
+.description-container {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.description {
+    color: white;
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 55px;
+    width: 70%;
+    margin-bottom: 50px;
 }
 
 </style>
