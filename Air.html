@@ -36,7 +36,7 @@
     </div>
     <div class="movie-details">
         <div class="title-air">
-        <i class="fa-solid fa-hashtag fa-xl hashtag" style="color: #ffffff;"></i>
+        <i class="fa-solid fa-hashtag fa-xl hashtag fa-flip" style="color: #ffffff;"></i>
         <div class="movie-title">
             <p class="detail-name"> Title <span class="colon"> : </span> </p>
             <p class="name-air"> Air </p>
@@ -44,7 +44,7 @@
         </div>
 
         <div class="title-air">
-        <i class="fa-solid fa-hashtag fa-xl hashtag" style="color: #ffffff;"></i>
+        <i class="fa-solid fa-hashtag fa-xl hashtag fa-flip" style="color: #ffffff;"></i>
         <div class="movie-title">
             <p class="detail-name"> iMDb Rating <span class="colon"> : </span> </p>
             <p class="name-air"> 7.7 </p>
@@ -52,7 +52,7 @@
         </div>
 
         <div class="title-air">
-        <i class="fa-solid fa-hashtag fa-xl hashtag" style="color: #ffffff;"></i>
+        <i class="fa-solid fa-hashtag fa-xl hashtag fa-flip" style="color: #ffffff;"></i>
         <div class="movie-title">
             <p class="detail-name"> Genres <span class="colon"> : </span> </p>
             <p class="name-air"> Drama | History | Comedy </p>
@@ -60,7 +60,7 @@
         </div>
         
         <div class="title-air">
-        <i class="fa-solid fa-hashtag fa-xl hashtag" style="color: #ffffff;"></i>
+        <i class="fa-solid fa-hashtag fa-xl fa-flip hashtag" style="color: #ffffff;"></i>
         <div class="movie-title">
             <p class="detail-name"> Language <span class="colon"> : </span> </p>
             <p class="name-air"> [ Hindi + English ] </p>
@@ -68,7 +68,7 @@
         </div>
         
         <div class="title-air">
-        <i class="fa-solid fa-hashtag fa-xl hashtag" style="color: #ffffff;"></i>
+        <i class="fa-solid fa-hashtag fa-xl hashtag fa-flip" style="color: #ffffff;"></i>
         <div class="movie-title">
             <p class="detail-name"> Quality <span class="colon"> : </span> </p>
             <p class="name-air"> 1080p | 720p | 480p </p>
@@ -78,23 +78,32 @@
 
     <div class="dowload-headline">
         <p class="headline">
-            <center>
             : DOWNLOAD LINKS :
-            </center>
         </p>
     </div>
-
-    <div class="links">
-        <button class="download-button">
-            1080p
-        </button>
-        
+        <div class="hd">
+            <button class="download-button">
+                1080p
+            </button>
+        </div>
+        <div class="hd">
         <button class="download-button">
             720p
         </button>
-    </div>
-</body>
+        </div>
+    </body>
 <style>
+
+
+.air-poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.air {
+    width: 250px;
+}
 
 .movie-details .title-air {
     margin-left: 25px;
@@ -130,8 +139,8 @@
     color: red;
     font-weight: bold;
     font-size: larger;
-    margin-left: 85px;
     margin-top: 30px;
+    text-align: center;
 }
 
 .download-button {
@@ -143,10 +152,9 @@
     border-width: 1.9px;
     border-radius: 12px;
     height: 25px;
-    width: 7rem;
+    width: 10rem;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 50px;
     margin-top: 30px;
     cursor: pointer;
 }
@@ -157,6 +165,13 @@
     border: none;
     transition: 0.5s;
 }
+
+.hd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 </style>
 </html>
