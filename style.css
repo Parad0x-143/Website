@@ -43,12 +43,9 @@
 /** MOVIES SECTION **/
 
 .movies-section {
-    display: grid;
-    grid-template-columns: 150px 150px;
-    margin-top: 15px;
+    display: flex;
+    justify-content: center;
     user-select: none;
-    justify-items: center;
-    margin-left: 40px;
 }
 
 .movies-section-buttons {
@@ -91,7 +88,7 @@
     margin-top: 25px;
     margin-left: 25px;
     grid-template-columns: 1fr 1fr;
-    row-gap: 55px;
+    row-gap: 50px;
 }
 
 .movie {
