@@ -87,7 +87,7 @@
 .movies {
     display: grid;
     margin-top: 25px;
-    margin-left: 25px;
+    margin-left: 40px;
     grid-template-columns: 1fr 1fr;
     row-gap: 50px;
 }
