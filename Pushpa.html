@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Movies Hub </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="movies-hub-logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo">
+                </div>
+            </div>
+            <div class="home-icon">
+                <div class="icon">
+                    <a href="">
+                        <i class="fa-solid fa-house fa-xl fa-bounce" style="color: #f5f5f5;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="back-button">
+        <a href="#" onclick="history.go(-1)">
+            <i class="fa-xl fa-solid fa-arrow-left back-button" style="color: #ffffff;"></i>
+        </a>
+    </div>
+
+    <div class="air-poster">
+        <img src="Movie-Posters/pushpa-poster.jpg" class="air">
+    </div>
+    <div class="movie-details">
+        <div class="title-air">
+            <i class="fa-solid fa-hashtag fa-xl hashtag fa-flip" style="color: #ffffff;"></i>
+            <div class="movie-title">
+                <p class="detail-name"> Title <span class="colon"> : </span> </p>
+                <p class="name-air">| PUSHPA |</p>
+            </div>
+        </div>
+
+        <div class="title-air">
+            <i class="fa-solid fa-hashtag fa-xl hashtag fa-flip" style="color: #ffffff;"></i>
+            <div class="movie-title">
+                <p class="detail-name"> iMDb Rating <span class="colon"> : </span> </p>
+                <p class="name-air"> | 8.1 / 10 | </p>
+            </div>
+        </div>
+
+        <div class="title-air">
+            <i class="fa-solid fa-hashtag fa-xl hashtag fa-flip" style="color: #ffffff;"></i>
+            <div class="movie-title">
+                <p class="detail-name"> Genres <span class="colon"> : </span> </p>
+                <p class="name-air"> Action | Adventure | </p>
+            </div>
+        </div>
+
+        <div class="title-air">
+            <i class="fa-solid fa-hashtag fa-xl fa-flip hashtag" style="color: #ffffff;"></i>
+            <div class="movie-title">
+                <p class="detail-name"> Language <span class="colon"> : </span> </p>
+                <p class="name-air"> | Hindi | </p>
+            </div>
+        </div>
+
+        <div class="title-air">
+            <i class="fa-solid fa-hashtag fa-xl hashtag fa-flip" style="color: #ffffff;"></i>
+            <div class="movie-title">
+                <p class="detail-name"> Quality <span class="colon"> : </span> </p>
+                <p class="name-air">| 1080p | 720p |</p>
+            </div>
+        </div>
+
+        <div class="title-air">
+            <i class="fa-solid fa-hashtag fa-xl hashtag fa-flip" style="color: #ffffff;"></i>
+            <div class="movie-title">
+                <p class="detail-name"> Trailer <span class="colon"> : </span> </p>
+            </div>
+        </div>
+
+        <div class="trailer">
+            <iframe width="390" height="219" src="https://www.youtube.com/embed/pKctjlxbFDQ"
+                title="#Pushpa - The Rise (Hindi) Official Trailer | Allu Arjun, Rashmika, Sunil, Fahadh | DSP | Sukumar"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="dowload-headline">
+        <p class="headline">
+            : DOWNLOAD LINKS :
+        </p>
+    </div>
+    <div class="hd1080p">
+        <i class="fa-solid fa-download fa-xl download-icon" style="color: #ffffff;"></i>
+        <a href="https://shorturl.at/dknq5">
+            <button class="download-button">
+                1080p
+            </button>
+        </a>
+    </div>
+
+    <div class="hd720p">
+        <i class="fa-solid fa-download fa-xl download-icon" style="color: #ffffff;"></i>
+        <a href="https://shorturl.at/dknq5">
+            <button class="download-button">
+                720p
+            </button>
+        </a>
+    </div>
+
+
+    <div class="movie-details">
+        <div class="title-air">
+            <i class="fa-solid fa-hashtag fa-xl hashtag fa-flip" style="color: #ffffff;"></i>
+            <div class="movie-title">
+                <p class="detail-name"> Description <span class="colon"> : </span> </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="description-container">
+        <p class="description"> Story of Pushpa Raj, a lorry driver in Seshachalam forests of South India, set in the
+            backdrop of red sandalwood smuggling. Red Sandalwood is endemic to South-Eastern Ghats (mountain range) of
+            India. Violence erupts between red sandalwood smugglers and the police charged with bringing down their
+            organization.
+        </p>
+    </div>
+
+</body>
+<style>
+    .air-poster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .air {
+        width: 250px;
+    }
+
+    .movie-details .title-air {
+        margin-left: 25px;
+        margin-top: 25px;
+        display: flex;
+    }
+
+    .movie-title {
+        color: white;
+        display: flex;
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .name-air {
+        margin-left: 8px;
+    }
+
+    .detail-name {
+        color: red;
+    }
+
+    .colon {
+        color: blue;
+    }
+
+    .hashtag {
+        margin-top: 12px;
+        margin-right: 8px;
+    }
+
+    .headline {
+        color: red;
+        font-weight: bold;
+        font-size: larger;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .download-button {
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+        border: solid;
+        border-color: white;
+        border-width: 1.9px;
+        border-radius: 12px;
+        height: 25px;
+        width: 10rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+    :hover.download-button {
+        color: black;
+        background-color: white;
+        border: none;
+        transition: 0.5s;
+    }
+
+    .hd1080p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hd720p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .trailer {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    .trailer-headline {
+        display: flex;
+        font-size: large;
+        font-weight: bold;
+        color: white;
+        margin-left: 50px;
+    }
+
+    .download-icon {
+        display: flex;
+        margin-top: 30px;
+        margin-left: -20px;
+        margin-right: 10px;
+    }
+
+    .description-container {
+        width: 365px;
+        margin-top: 5px;
+    }
+
+    .description {
+        color: white;
+        display: flex;
+        font-size: large;
+        font-weight: bold;
+        margin-left: 55px;
+        margin-bottom: 50px;
+    }
+</style>
+
+</html>
