@@ -64,7 +64,7 @@
     color: white;
     border: solid;
     border-color: white;
-    border-width: 1.9px;
+    border-width: 2px;
     border-radius: 12px;
     height: 25px;
     width: 7rem;
@@ -81,12 +81,6 @@
     background-color: white;
     border: none;
     transition: 0.5s;
-}
-
-:active.movies-section-buttons {
-    color: black;
-    background-color: white;
-    border: none;
 }
 
 /** END **/
