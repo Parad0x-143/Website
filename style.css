@@ -125,5 +125,9 @@ body {
     margin-bottom: 15px;
 }
 
+. comment-box {
+    margin-top: 20px;
+    width: 95%;
+}
 
 /** END **/
