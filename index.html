@@ -94,5 +94,62 @@
             </a>
         </div>
     </div>    
+
+     <script>
+        // JavaScript code for handling form submission and storing comments locally
+        const commentForm = document.getElementById("commentForm");
+        const commentsDiv = document.getElementById("comments");
+
+        // Initialize comments from local storage if available
+        let savedComments = JSON.parse(localStorage.getItem("comments")) || [];
+
+        // Display saved comments
+        function displayComments() {
+            commentsDiv.innerHTML = "";
+            savedComments.forEach(comment => {
+                const commentElement = document.createElement("div");
+                commentElement.innerHTML = `<strong>${comment.username}:</strong> ${comment.text}`;
+                commentsDiv.appendChild(commentElement);
+            });
+        }
+
+        // Add a new comment to the savedComments array and update local storage
+        function addComment(username, text) {
+            savedComments.push({ username, text });
+            localStorage.setItem("comments", JSON.stringify(savedComments));
+            displayComments();
+        }
+
+        commentForm.addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent the form from submitting the traditional way
+
+            const username = document.getElementById("username").value;
+            const commentText = document.getElementById("comment").value;
+
+            if (username.trim() !== "" && commentText.trim() !== "") {
+                addComment(username, commentText);
+
+                // Clear form fields
+                document.getElementById("username").value = "";
+                document.getElementById("comment").value = "";
+            }
+        });
+
+        // Initial display of comments
+        displayComments();
+     </script>
+
+     <h2>Leave a Comment:</h2>
+    <form id="commentForm">
+        <label for="username">Your Name:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="comment">Your Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="comments">
+        <!-- Display submitted comments here -->
+    </div>
+    
 </body>
 </html>
