@@ -212,7 +212,7 @@
 </style>
     <!-- h -->
 
-
+    <div class=comments>
     <form id="commentForm" action="save_comment.php" method="post">
     <label for="username">Your Name:</label><br>
     <input type="text" id="username" name="username"><br>
@@ -220,11 +220,16 @@
     <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
     <input type="submit" value="Submit">
     </form>
+    </div>
 
     <div id="comments">
     <?php include("display_comments.php"); ?>
     </div>
-
+<style>
+    . comments {
+        background-colour: white;
+    }
+</style>
     
 </body>
 </html>
