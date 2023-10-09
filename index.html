@@ -94,7 +94,7 @@
             </a>
         </div>
     </div>    
-
+<!-- T-T --!>
      <script>
         // JavaScript code for handling form submission and storing comments locally
         const commentForm = document.getElementById("commentForm");
@@ -151,6 +151,7 @@
     </form>
     <div id="comments">
         <!-- Display submitted comments here -->
+    <!--
     </div>
     </div>
 
@@ -209,5 +210,21 @@
             margin-bottom: 10px;
         }
 </style>
+    <!-- h -->
+
+
+    <form id="commentForm" action="save_comment.php" method="post">
+    <label for="username">Your Name:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="comment">Your Comment:</label><br>
+    <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+    <input type="submit" value="Submit">
+    </form>
+
+    <div id="comments">
+    <?php include("display_comments.php"); ?>
+    </div>
+
+    
 </body>
 </html>
