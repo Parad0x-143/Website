@@ -3,7 +3,7 @@
 $servername = "sql12.freesqldatabase.com";
 $username = "sql12652334";
 $password = "XzwqmZATbQ";
-$database = "sql12652334";
+$database = "comments";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
