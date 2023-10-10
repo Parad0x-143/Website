@@ -93,143 +93,58 @@
                 <div class="title"></div>
             </a>
         </div>
-    </div>    
-<!-- T-T --!>
-     <script>
-        // JavaScript code for handling form submission and storing comments locally
-        const commentForm = document.getElementById("commentForm");
-        const commentsDiv = document.getElementById("comments");
+    </div>
 
-        // Initialize comments from local storage if available
-        let savedComments = JSON.parse(localStorage.getItem("comments")) || [];
-
-        // Display saved comments
-        function displayComments() {
-            commentsDiv.innerHTML = "";
-            savedComments.forEach(comment => {
-                const commentElement = document.createElement("div");
-                commentElement.innerHTML = `<strong>${comment.username}:</strong> ${comment.text}`;
-                commentsDiv.appendChild(commentElement);
-            });
-        }
-
-        // Add a new comment to the savedComments array and update local storage
-        function addComment(username, text) {
-            savedComments.push({ username, text });
-            localStorage.setItem("comments", JSON.stringify(savedComments));
-            displayComments();
-        }
-
-        commentForm.addEventListener("submit", function (e) {
-            e.preventDefault(); // Prevent the form from submitting the traditional way
-
-            const username = document.getElementById("username").value;
-            const commentText = document.getElementById("comment").value;
-
-            if (username.trim() !== "" && commentText.trim() !== "") {
-                addComment(username, commentText);
-
-                // Clear form fields
-                document.getElementById("username").value = "";
-                document.getElementById("comment").value = "";
-            }
-        });
-
-        // Initial display of comments
-        displayComments();
-     </script>
-
+    <div>
+       <h1>Comment System</h1>
     
-    <div style="background-color:white;">
-     <h2>Leave a Comment:</h2>
-    <form id="commentForm">
-        <label for="username">Your Name:</label><br>
-        <input type="text" id="username" name="username"><br>
-        <label for="comment">Your Comment:</label><br>
-        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
-        <input type="submit" value="Submit">
+    <!-- Comment Form -->
+    <form method="POST" action="comments.php" class="dark-mode">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required><br>
+        
+        <label for="text">Comment:</label>
+        <textarea name="text" required></textarea><br>
+        
+        <input type="submit" value="Submit Comment">
     </form>
-    <div id="comments">
-        <!-- Display submitted comments here -->
-    <!--
-    </div>
-    </div>
+    
+    <!-- Display Comments -->
+    <h2>Comments:</h2>
+    <?php include "comments.php"; ?>
 
-<style>
-    h2 {
-            text-align: center;
-            margin-top: 20px;
+    <!-- Toggle Dark/Light Mode (optional) -->
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    
+    <script>
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+    </script>
+        <style>
+        /* Dark Mode Styles */
+        body {
+            background-color: #121212;
+            color: #ffffff;
         }
 
-        form {
-            max-width: 600px;
-            margin: 0 auto;
+        form, textarea, input[type="text"] {
             background-color: #333;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        label {
-            font-weight: bold;
             color: #ffffff;
+            border: 1px solid #666;
         }
 
-        input[type="text"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #555;
-            background-color: #444;
-            border-radius: 4px;
-            color: #ffffff;
-        }
+        /* Additional dark mode styles can be added as needed */
 
-        input[type="submit"] {
-            background-color: #007bff;
-            color: #ffffff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+        /* Light Mode Styles (optional) */
+        .light-mode {
+            background-color: #ffffff;
+            color: #333;
         }
-
-        input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-
-        #comments {
-            margin-top: 20px;
-        }
-
-        .comment {
-            background-color: #444;
-            padding: 10px;
-            border-radius: 4px;
-            margin-bottom: 10px;
-        }
-</style>
-    <!-- h -->
-
-    <div class=comment>
-    <form id="commentForm" action="save_comment.php" method="post">
-    <label for="username">Your Name:</label><br>
-    <input type="text" id="username" name="username"><br>
-    <label for="comment">Your Comment:</label><br>
-    <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
-    <input type="submit" value="Submit">
-    </form>
+        </style>
     </div>
-
-    <div id="comments">
-    <?php include("display_comments.php"); ?>
-    </div>
-<style>
-    .comment {
-        background-colour: white;
-    }
-</style>
     
 </body>
 </html>
