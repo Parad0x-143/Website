@@ -94,57 +94,6 @@
             </a>
         </div>
     </div>
-
-    <div>
-       <h1>Comment System</h1>
-    
-    <!-- Comment Form -->
-    <form method="POST" action="comments.php" class="dark-mode">
-        <label for="username">Username:</label>
-        <input type="text" name="username" required><br>
-        
-        <label for="text">Comment:</label>
-        <textarea name="text" required></textarea><br>
-        
-        <input type="submit" value="Submit Comment">
-    </form>
-    
-    <!-- Display Comments -->
-    <h2>Comments:</h2>
-    <?php include "comments.php"; ?>
-
-    <!-- Toggle Dark/Light Mode (optional) -->
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    
-    <script>
-        // Function to toggle dark mode
-        function toggleDarkMode() {
-            const body = document.body;
-            body.classList.toggle("dark-mode");
-        }
-    </script>
-        <style>
-        /* Dark Mode Styles */
-        body {
-            background-color: #121212;
-            color: #ffffff;
-        }
-
-        form, textarea, input[type="text"] {
-            background-color: #333;
-            color: #ffffff;
-            border: 1px solid #666;
-        }
-
-        /* Additional dark mode styles can be added as needed */
-
-        /* Light Mode Styles (optional) */
-        .light-mode {
-            background-color: #ffffff;
-            color: #333;
-        }
-        </style>
-    </div>
     
 </body>
 </html>
